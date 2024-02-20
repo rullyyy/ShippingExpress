@@ -20,13 +20,13 @@ public class FactoryService {
         handlerDistance.setNextHandler(handlerPackage);
         handlerPackage.setNextHandler(handlerTransportService);
 
-        double cost = handlerDistance.calculateCost(request);
-        DeliverService deliverService = new DeliverService(cost);
+        double cost = handlerTransportService.calculateCost(request);
+        DeliverService deliverService = new DeliverService(cost, request.getTransport());
 
        
         
 
-        double deliverTime = deliverService.calculateDeliverTime();
+        double deliverTime = deliverService.calculateDeliverTime(request.getDistance());
         deliverService.setDeliverTime(deliverTime);
 
         return deliverService;

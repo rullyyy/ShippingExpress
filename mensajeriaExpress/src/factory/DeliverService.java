@@ -23,6 +23,13 @@ public class DeliverService {
         
     }
 
+    public DeliverService(double cost, Transport transport) {
+        this.cost = cost;
+        this.transport = transport;
+    }
+    
+    
+
     public DeliverService(double cost) {
         this.cost = cost;
     }
@@ -44,7 +51,7 @@ public class DeliverService {
     }
     
     
-     public double calculateDeliverTime() {
+     public double calculateDeliverTime(double distance) {
         if (transport == null) {
             throw new IllegalStateException("Transport not selected");
         }
