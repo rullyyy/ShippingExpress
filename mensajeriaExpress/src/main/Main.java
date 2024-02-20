@@ -4,12 +4,13 @@
  */
 package main;
 
+import enums.TypePackage;
+import enums.TypeService;
 import factory.DeliverService;
 import factory.FactoryService;
 import handlers.Request;
 import java.util.Scanner;
-import model.TypePackage;
-import model.TypeService;
+
 
 /**
  *

@@ -4,13 +4,13 @@
  */
 package handlers;
 
-import model.Transport;
-import model.TypePackage;
+
 
 /**
  *
  * @author xfs85
  */
+import enums.TypePackage;
 public class HandlerPackage extends HandlerService{
 
     @Override

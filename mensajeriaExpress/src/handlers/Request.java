@@ -4,9 +4,11 @@
  */
 package handlers;
 
-import model.Transport;
-import model.TypePackage;
-import model.TypeService;
+import enums.Transport;
+import enums.TypePackage;
+import enums.TypeService;
+
+
 
 /**
  *
